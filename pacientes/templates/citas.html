@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Mis Citas
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mb-4">Gestiona tus Citas</h1>
+                <p>Aquí puedes ver, modificar y gestionar todas tus citas en la clínica.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Sección de próxima cita con un estilo más visual -->
+            <div class="col-md-6">
+                <div class="card text-white bg-primary mb-4">
+                    <div class="card-header">
+                        Próxima Cita
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Consulta General</h5>
+                        <p class="card-text">Fecha: 15 de Septiembre, 2024<br>Hora: 10:00 AM<br>Doctor: Dr. Pérez</p>
+                        <a href="#" class="btn btn-light">Reprogramar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección para agendar una nueva cita -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Agendar Nueva Cita
+                    </div>
+                    <div class="card-body">
+                        <p>Si necesitas una nueva consulta, puedes agendar tu cita a continuación:</p>
+                        <a href="#" class="btn btn-success">Agendar cita</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Historial de citas -->
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Historial de Citas
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Hora</th>
+                                    <th>Doctor</th>
+                                    <th>Especialidad</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1 de Septiembre, 2024</td>
+                                    <td>10:00 AM</td>
+                                    <td>Dr. García</td>
+                                    <td>Odontología</td>
+                                    <td><a href="#" class="btn btn-secondary btn-sm">Detalles</a></td>
+                                </tr>
+                                <!-- Más filas aquí -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

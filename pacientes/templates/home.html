@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <h1>Bienvenido a tu página principal</h1>
+    <p>Aquí encontrarás información relevante sobre tus proximas citas.</p>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            Información destacada
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Últimas noticias</h5>
+            <p class="card-text">Mantente al día con las últimas novedades de nuestra clínica.</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Citas recientes
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Consulta tus citas más recientes aquí.</p>
+                    <a href="#" class="btn btn-secondary">Ver citas</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Notificaciones
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Revisa tus notificaciones importantes.</p>
+                    <a href="#" class="btn btn-secondary">Ver notificaciones</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
