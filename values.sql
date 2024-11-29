@@ -156,3 +156,5 @@ VALUES
     (3, 'password', 'P', 3),
     (4, 'password', 'P', 4),
     (5, 'password', 'P', 5);
+
+-- Insertar datos en la tabla usuarios

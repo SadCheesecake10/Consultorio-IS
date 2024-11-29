@@ -1,3 +1,4 @@
+#run this script to execute the SQL script in the database
 import os
 import django
 import sqlite3

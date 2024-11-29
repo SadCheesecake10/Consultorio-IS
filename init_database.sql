@@ -109,3 +109,5 @@ CREATE TABLE users (
     id_persona_fk INTEGER NOT NULL,
     FOREIGN KEY (id_persona_fk) REFERENCES personas (id_persona_pk)
 );
+
+-- Creacion de las tablas
